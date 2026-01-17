@@ -7,7 +7,7 @@ const secondLargest = (ar: number[]): number => {
       l = i;
     } else {
       if (ar[i] !== ar[l]) {
-        if (sl === -1 || ar[sl] < ar[i]) {
+        if (sl === -1 || ar[i] >= ar[sl]) {
           sl = i;
         }
       }
